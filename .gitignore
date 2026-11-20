@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# environment files (never commit real secrets)
+.env
+.env.local
+.env.*.local
+
+# logs and OS files
+npm-debug.log*
+.DS_Store
+
+# editor
+.vscode/*
+!.vscode/extensions.json

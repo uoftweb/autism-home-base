@@ -1,0 +1,5 @@
+# Replace @your-github-username with the project lead's GitHub username.
+# With branch protection's "Require review from Code Owners" turned on,
+# every PR needs approval from the people listed here.
+
+* @your-github-username
