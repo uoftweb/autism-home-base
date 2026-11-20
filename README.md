@@ -2,7 +2,7 @@
 
 A web app for **Autism Home Base**, a non-profit that runs social and recreational programs for autistic adults, their friends and families. It replaces the Excel-based planning of the 8-week summer program with a weekly planner that tracks attendance and sends updates to each pod's families.
 
-Built by the UofT Web Dev Club. The full client brief is in the team Google Drive under **Overview**.
+Built by the UofT Web Dev Club.
 
 ## Tech stack
 
@@ -12,21 +12,12 @@ Built by the UofT Web Dev Club. The full client brief is in the team Google Driv
 | Back end | Supabase (PostgreSQL, auth, storage, row-level security) |
 | Hosting | Vercel and Supabase |
 
-## Prerequisites
-
-Install these once:
-
-1. **Node.js** (LTS version 20 or newer): <https://nodejs.org>. Check with `node -v`.
-2. **Git**: <https://git-scm.com>. Check with `git --version`.
-3. **VS Code** (or any editor): <https://code.visualstudio.com>.
-4. A **GitHub account** that has accepted the invitation to this repository.
-
 ## Getting started
 
 ```bash
 # 1. Download the code
 git clone <repository-url>
-cd ahb-weekly-planner
+cd autism-home-base
 
 # 2. Install dependencies (takes a minute)
 npm install
@@ -40,7 +31,7 @@ npm run dev
 
 Open <http://localhost:3000>. Edits you save show up in the browser automatically.
 
-The default `.env.local` uses fake data (`NEXT_PUBLIC_USE_MOCK_DATA=true`), so you do **not** need any Supabase keys to work on the UI.
+The default `.env.local` uses test data (`NEXT_PUBLIC_USE_MOCK_DATA=true`), so you do **not** need any Supabase keys to work on the UI.
 
 ## Useful commands
 
@@ -56,7 +47,7 @@ All variables are documented in [`.env.example`](.env.example). Never commit `.e
 
 | Variable | Needed for UI work? | Purpose |
 |---|---|---|
-| `NEXT_PUBLIC_USE_MOCK_DATA` | Yes (`true`) | Use fake data from `src/mock-data` |
+| `NEXT_PUBLIC_USE_MOCK_DATA` | Yes (`true`) | Use test data from `src/mock-data` |
 | `NEXT_PUBLIC_SUPABASE_URL` | No | Supabase project URL |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | No | Supabase public key |
 | `SUPABASE_SERVICE_ROLE_KEY` | No | Server-only admin key. Never share it |
@@ -75,7 +66,7 @@ src/
     attendance/         Attendance table
     announcements/      Announcement list and form
     staff-feed/         Shared staff notes
-  mock-data/            Fake data shaped like the database tables
+  mock-data/            Test data shaped like the database tables
   lib/                  Constants and helpers
   styles/               Design tokens and component styles
 docs/                   Team documentation
@@ -88,10 +79,3 @@ docs/                   Team documentation
 - **Tickets:** [`docs/tasks.md`](docs/tasks.md) and the project Kanban board ([`docs/kanban.md`](docs/kanban.md)).
 - **Design:** the Figma file and [`docs/design-system.md`](docs/design-system.md). Use tokens, not hard-coded colours.
 - **Architecture:** [`docs/architecture.md`](docs/architecture.md).
-- **Maintainer setup:** [`docs/github-setup.md`](docs/github-setup.md).
-
-## Links
-
-- Figma: `TODO: paste link`
-- Kanban board: `TODO: paste link`
-- Google Drive: `TODO: paste link`
