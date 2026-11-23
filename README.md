@@ -12,15 +12,6 @@ Built by the UofT Web Dev Club. The full client brief is in the team Google Driv
 | Back end | Supabase (PostgreSQL, auth, storage, row-level security) |
 | Hosting | Vercel and Supabase |
 
-## Prerequisites
-
-Install these once:
-
-1. **Node.js** (LTS version 20 or newer): <https://nodejs.org>. Check with `node -v`.
-2. **Git**: <https://git-scm.com>. Check with `git --version`.
-3. **VS Code** (or any editor): <https://code.visualstudio.com>.
-4. A **GitHub account** that has accepted the invitation to this repository.
-
 ## Getting started
 
 ```bash
@@ -98,9 +89,3 @@ Use `src/lib/supabase/client.js` in the browser and `src/lib/supabase/server.js`
 - **Design:** the Figma file and [`docs/design-system.md`](docs/design-system.md). Use tokens, not hard-coded colours.
 - **Architecture:** [`docs/architecture.md`](docs/architecture.md).
 - **Maintainer setup:** [`docs/github-setup.md`](docs/github-setup.md).
-
-## Links
-
-- Figma: (add link)
-- Kanban board: (add link)
-- Google Drive: (add link)
