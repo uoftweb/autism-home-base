@@ -1,5 +1,5 @@
 {
-  "name": "ahb-weekly-planner",
+  "name": "uoftwebdev_ahb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
     "next": "^15.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

@@ -1,5 +1,4 @@
 @import "../styles/tokens.css";
-@import "../styles/components.css";
 
 *,
 *::before,
@@ -18,19 +17,41 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
 }
 
-/* Never remove focus outlines; keyboard users need them. */
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 :focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 2px;
-}
-
-.page-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: var(--space-8) var(--space-6);
 }

@@ -1,5 +1,4 @@
-/* Design tokens. Names mirror the Figma styles. See docs/design-system.md.
-   Brand values: AHB Brand Style Guide, January 2020 (v1). */
+/* Design tokens. Names mirror the Figma styles. Brand values: AHB Brand Style Guide (2020). */
 
 :root {
   /* Brand colours */
@@ -7,9 +6,9 @@
   --color-black: #000000;
   --color-charcoal: #53565a;
 
-  /* Roles */
+  /* Colour roles: use these in components, not the raw brand values */
   --color-primary: var(--color-green);
-  --color-on-primary: var(--color-black); /* black on green, never green text on white */
+  --color-on-primary: var(--color-black); /* text placed on the primary colour */
   --color-secondary: var(--color-charcoal);
   --color-background: #fafafa;
   --color-surface: #ffffff;
@@ -22,7 +21,6 @@
 
   /* Typography */
   --font-body: var(--font-pt-sans), "PT Sans", system-ui, sans-serif;
-  /* Swap in "Novecento Wide" first once the licensed font files are added */
   --font-heading: var(--font-pt-sans), "PT Sans", system-ui, sans-serif;
   --text-h1: 2rem;
   --text-h2: 1.5rem;
@@ -39,7 +37,7 @@
   --space-8: 32px;
   --space-12: 48px;
 
-  /* Shape */
+  /* Shape and sizing */
   --radius: 8px;
   --tap-target: 44px;
 }

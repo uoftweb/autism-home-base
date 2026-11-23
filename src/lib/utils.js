@@ -1,5 +1,3 @@
-// Small helpers shared across the app.
-
 export function formatTimeRange(start, end) {
   return `${start} to ${end}`;
 }

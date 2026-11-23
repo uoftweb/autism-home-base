@@ -1,7 +1,9 @@
+export const USE_MOCK_DATA = process.env.NEXT_PUBLIC_USE_MOCK_DATA === "true";
+
 export const ROLES = {
-  ADMIN: "admin", // full access
-  STAFF: "staff", // limited access to assigned pods
-  MEMBER: "member", // read-only access to assigned pods
+  ADMIN: "admin",
+  STAFF: "staff",
+  MEMBER: "member",
 };
 
 export const ATTENDANCE_STATUSES = ["present", "absent", "late"];
